@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    background:#fff;
+    width:100%;
+    max-width:650px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.input-section input{
+    flex:1;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.input-section button{
+    padding:12px 18px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.input-section button:hover{
+    background:#1d4ed8;
+}
+
+.filter-section{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.filter-btn{
+    padding:10px 15px;
+    border:none;
+    background:#e5e7eb;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.filter-btn.active{
+    background:#2563eb;
+    color:white;
+}
+
+#taskList{
+    list-style:none;
+}
+
+.task{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin-bottom:10px;
+    background:#f9fafb;
+    border-radius:8px;
+}
+
+.task.completed span{
+    text-decoration:line-through;
+    opacity:0.6;
+}
+
+.task-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.complete-btn{
+    background:green;
+    color:white;
+}
+
+.edit-btn{
+    background:orange;
+    color:white;
+}
+
+.delete-btn{
+    background:crimson;
+    color:white;
+}
+
+.task-buttons button{
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+@media(max-width:600px){
+
+    .input-section{
+        flex-direction:column;
+    }
+
+    .task{
+        flex-direction:column;
+        gap:10px;
+    }
+}
